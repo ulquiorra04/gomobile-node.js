@@ -1,5 +1,6 @@
 const _ = require("lodash");
 const validate = require("validate.js");
+const CALL = require("./lib/call");
 
 function Gomobile (options) {
     this.options = _.cloneDeep(options);
@@ -17,6 +18,8 @@ function Gomobile (options) {
     if(error) {
         throw(error);
     }
+
+    this.CALL = new CALL(this.options);
 }
 
 module.exports = function (options) {
