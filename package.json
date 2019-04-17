@@ -1,0 +1,29 @@
+{
+  "name": "gomobile",
+  "version": "1.0.0",
+  "description": "This is the official gomobile nodejs sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulquiorra04/gomobile-node.js.git"
+  },
+  "keywords": [
+    "nodejs",
+    "gomobile",
+    "voip",
+    "voice"
+  ],
+  "author": "ABDELHAMID RAHMAOUI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ulquiorra04/gomobile-node.js/issues"
+  },
+  "homepage": "https://github.com/ulquiorra04/gomobile-node.js#readme",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "validate.js": "^0.12.0"
+  }
+}
