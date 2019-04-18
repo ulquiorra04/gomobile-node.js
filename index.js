@@ -5,7 +5,7 @@ const CALL = require("./lib/call");
 function Gomobile (options) {
     this.options = _.cloneDeep(options);
     const constraints = {
-        username: {
+        login: {
             presence: true
         },
         password: {
