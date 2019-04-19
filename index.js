@@ -1,6 +1,7 @@
 const _ = require("lodash");
 const validate = require("validate.js");
 const CALL = require("./lib/call");
+const Common = require("./lib/common");
 
 function Gomobile (options) {
     this.options = _.cloneDeep(options);
@@ -16,8 +17,13 @@ function Gomobile (options) {
     const error = validate(this.options, constraints);
 
     if(error) {
-        throw(error);
+        return error;
     }
+
+    if(!validate.isEmpty(options.demo) && options.demo == true)
+        Common.enableDemo();
+
+    console.log(Common.MAKE_SINGLE_STATIC_CALL);
 
     this.CALL = new CALL(this.options);
 }
