@@ -23,7 +23,7 @@ function Gomobile (options) {
     if(!validate.isEmpty(options.demo) && options.demo == true)
         Common.enableDemo();
 
-    console.log(Common.MAKE_SINGLE_STATIC_CALL);
+    //console.log(Common.MAKE_SINGLE_STATIC_CALL);
 
     this.CALL = new CALL(this.options);
 }
